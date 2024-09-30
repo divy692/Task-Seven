@@ -9,34 +9,45 @@ This repository contains the results of the security assessments performed on th
 1. OpenVAS Scan Report
 
   Steps:
+
 1.Update Your System:
 
 sudo apt update
+
 2.Install OpenVAS:
 
 sudo apt install openvas
+
 3.Setup OpenVAS:
 
 sudo gvm-setup
+
 4.Check the Status:
 
 sudo gvm-check-setup
+
 5.Start OpenVAS Services:
 
 sudo gvm-start
+
 6.Access OpenVAS Web Interface: Open your browser and navigate to:
 
 https://localhost:9392
+
 7.Create a Target:
 
 Navigate to Configuration > Targets and create a new target for your Metasploitable VM.
+
 8.Create and Run a Scan Task:
 
 Go to Scans > Tasks, create a new task with the target you just created, and start the scan.
+
 9.Generate the Report:
 
 After the scan is complete, go to Reports > Tasks and download the report in PDF format.
 Save the PDF report as openvas_report.pdf. 
+
+
 
 
 
@@ -47,6 +58,7 @@ Save the PDF report as openvas_report.pdf.
 1.Run Nikto Scan:
 
 nikto -h <Metasploitable_IP> -o nikto_report.html -Format html
+
 Replace <Metasploitable_IP> with the IP address of your Metasploitable VM.
 
 2.Save the HTML Report:
@@ -67,10 +79,15 @@ The report will be saved as nikto_report.html.
 2.Take a Screenshot:
 
 .Capture a screenshot of the terminal displaying the banner.
+
 .Save the screenshot as banner_screenshot.png.
+
 .Repository Structure
+
 .openvas_report.pdf - OpenVAS scan report in PDF format.
+
 .nikto_report.html - Nikto scan report in HTML format.
+
 .banner_screenshot.png - Screenshot of the banner grabbed using netcat.
 
 
